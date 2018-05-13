@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link rel="icon" href="icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+</head>
+<body>
+<div class="container text-white main" style="background-color: #495057;">
+    <div class="col-md-10  mx-auto text-center" style="height: 775px;margin-top: 0px">
+        <h1 class="" style="user-select:none; padding-top: 60px">注册</h1>
+        <p class="py-2 center" style="user-select:none;">欢迎注册xxxxxxxxxxxxxxxxx</p>
+        <div class="alert alert-danger showInfo">
+            这里是一个警告，只有当后台传来登录错误时会出现!
+        </div>
+        <form action="#" class="" role="form">
+            <div class="my-lg-5">
+                <label for="username" class="col-form-label col-sm-2 float-left text-right">用户名：</label>
+                <div class="form-group">
+                    <input type="text" name="username" id="username" class="user col-sm-8 form-control" placeholder="4到16位：字母，数字，下划线，减号 (必填)" onblur="user(this.value)"/>
+                </div>
+            </div>
+            <div class="my-lg-5">
+                <label for="password" class="col-form-label col-sm-2 float-left text-right">密码：</label>
+                <div class="form-group">
+                    <input type="password" name="password" id="password" class="pass col-sm-8 form-control" placeholder="最少6位，包括至少1个大写字母，1个小写字母，1个数字，1个特殊字符(必填)" onblur="pass(this.value)"/>
+                </div>
+            </div>
+
+            <div class="my-lg-5">
+                <label for="email" class="col-form-label col-sm-2 float-left text-right">邮箱：</label>
+                <div class="form-group">
+                    <input type="text" name="email" id="email" class="email col-sm-8 form-control" placeholder="请输入邮箱(必填)" onblur="emails(this.value);"/>
+                </div>
+            </div>
+
+            <div class="my-lg-5">
+                <label for="telephone" class="col-form-label col-sm-2 float-left text-right">电话：</label>
+                <div class="form-group">
+                    <input type="text" name="telephone" id="telephone" class="tele col-sm-8 form-control" placeholder="请输入电话号码(必填)" onblur="tele(this.value)"/>
+                </div>
+            </div>
+
+            <div class="my-lg-5" style="line-height: 40px;">
+                <label class="col-form-label col-sm-2 float-left text-right">性别：</label>
+                <div class="form-group text-left">
+                    男：<input type="radio" value="0" name="sex"/>
+                    女：<input type="radio" value="1" name="sex"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <a href="#" class="btn btn-outline-warning w-75">注册</a>
+            </div>
+        </form>
+    </div>
+    <div class="blockquote-footer text-center">
+          2018-404-版权所有
+    </div>
+</div>
+</body>
+<script src="../js/Check.js"></script>
+<script src="../js/regular.js"></script>
+<script>
+
+</script>
+</html>
